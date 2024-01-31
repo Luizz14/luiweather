@@ -24,7 +24,6 @@ export async function getCityByNameService(
 ): Promise<CityProps[] | []> {
   try {
     const { data } = await api.get<CityAPIResponse>(`/weather?q=${name}`);
-    console.log("passou aq");
 
     const city = {
       id: data.id,
