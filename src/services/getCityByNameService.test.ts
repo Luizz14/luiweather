@@ -9,6 +9,6 @@ describe("API: getCityByNameService", () => {
       .mockReturnValue(Promise.resolve({ data: mockCityAPIResponse }));
     const response = await getCityByNameService("São Paulo");
 
-    expect(response).toBeGreaterThan(0);
+    expect(response.length).toBeGreaterThan(0);
   });
 });

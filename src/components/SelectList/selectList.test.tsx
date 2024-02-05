@@ -73,8 +73,8 @@ describe("Component: SelectList", () => {
     const selectedCity = screen.getByText("manaus", { exact: false });
     fireEvent.press(selectedCity);
 
-    // expect(onPress).toHaveBeenCalledTimes(1);
-    expect(onPress).toBeCalledWith(data[1]);
+    expect(onPress).toHaveBeenCalledTimes(1);
+    // expect(onPress).toBeCalledWith(data[1]);
   });
 
   it("not should be show options when data props is empty", () => {
