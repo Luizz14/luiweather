@@ -9,8 +9,8 @@ type Props = {
   placeholder?: string
   value?: string
   data: CityProps[]
-  onPress: (value: CityProps) => void
   onChange: (value: string) => void
+  onPress: (value: CityProps) => void
 }
 
 export function SelectList(props: Props) {
